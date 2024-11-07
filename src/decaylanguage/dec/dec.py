@@ -1058,7 +1058,7 @@ All but the first occurrence will be discarded/removed ...""".format(
 
         info = []
         for dm in self._find_decay_modes(mother):
-            d = self._decay_mode_details(dm, display_photos_keyword=False)
+            d = self._decay_mode_details(dm, display_photos_keyword=True)
 
             for i, fs in enumerate(d["fs"]):
                 if fs in stable_particles:
